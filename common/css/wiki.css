@@ -1,0 +1,72 @@
+.wtitle { width: 65%; float: left; font-size: 2.5em; font-weight: bold; margin-bottom: 0px; }
+.wtools { width: 35%; float: left; text-align:right; z-index: 2; }
+
+
+.wtitle:after, .wtools:after { clear: both; content: ""; display: block; }
+.wcontent { width: 100%; margin-top: 15px; line-height: 1.5; word-break: break-all;  }
+	.wcontent img { max-width: 100%; margin: 5px 0; }
+.toc { display: inline-block; min-width: 300px; border: 1px solid #ddd; padding: 12px 20px 18px 0px; margin-left: 5px; }
+.toc:before { content: "목차"; font-size: 1.5em; margin-left: 15px; }
+	.toc-item { display: block; margin: 4px 0; }
+	.toc .toc-indent:first-child { margin-top: 12px; font-size: 1em; }
+	.toc-indent { padding-left: 20px; }
+	.toc-indent1 { padding-left: 20px; }
+	.toc-indent2 { padding-left: 40px; }
+	.toc-indent3 { padding-left: 60px; }
+
+.article h1, .article h2, .article h3 { width: 100%; /* padding-bottom: 10px;  */ margin: 0; border-bottom: 1px solid #ddd; display: inline-block; margin: 10px 0; }
+/*
+.article h1 { margin: 20px 0 0; }
+.article h2 { margin: 18px 0 0; }
+.article h3 { margin: 16px 0 0; }*/
+/* 댓글 */
+.w-comment-wrap { width: 100%; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.1); margin-top: 20px; }
+.wcomment { width: 96%; padding: 2%; min-height: 70px; }
+	.comment { width: 100%; border-bottom: 1px dotted #ddd; padding: 10px 0; }
+		.comment.reply { border-bottom: 1px solid #ddd; background: #f4f4f4; }
+		.comment.reply .reply-inner { background: url(/static/img/reply.gif) no-repeat 0 3px; padding-left: 10px; }
+	.comment:last-child { border-bottom: 0; }
+	.comment .owner { color: #3074a5; float: left; }
+	.comment .coption { float: right; padding-left: 7px; padding-right: 7px; }
+		.coption button { padding: 3px 10px; font-size: .8em; }
+	.comment .regdate { float: right; color: #888; padding-top: 3px; }
+	.comment .ccontent { min-height: 37px; margin-top: 5px; }
+	
+	.ceditor { margin-top: 10px; }
+		#comment-editor { width: 98%; min-height: 70px; padding: 1%; font-family: "Nanum Barun Gothic";}
+	.caction { text-align:right; margin-top: 5px; }
+
+
+
+/* 광고 */
+.ad { width: 100%; }
+	.ad1 { text-align:center; margin: 5px 0 10px 0; display: inline-block; }
+
+
+/* 문법 관련 */
+/* 링크 */
+.w-link {}
+.w-link-out { color: #3498db !important; }
+/* 취소선 */
+del { color: #999; }
+/* 기울이기 */
+em { font-style: italic; }
+/* 굵게 */
+strong { font-weight: bold; }
+/* 밑줄 */
+u { text-decoration: underline; }
+
+/* 인용구 */
+.quote { width: 96%; margin: 10px 0; border: 2px dashed #333; border-left: 4px solid #4285f4; background: #eee; background-image: url(/static/img/quote.png); background-repeat: no-repeat; background-position: calc(100% - 10px) 10px; background-size: 25px; padding: 2% 0 2% 2%; display: inline-block; }
+/* 틀 */
+.caution { display: inline-block; width: 96%; border: 1px solid gray;}
+	.caution-title { padding: 1% 2% 10px 2%; border-top: 5px solid orange; border-bottom: 0; margin-top: 10px; font-size: 1.2em; }
+	.caution-content { padding: 1% 2% 10px 2%; border-top: 0; margin-bottom: 10px; }
+
+	/* 틀-경고 */
+	.caution-16222 { border-top-color: #f00; }
+	/* 틀-불법 */
+	.caution-16223 { border-top-color: #000; }
+/* 수정 */
+.edit {}
+	.edit textarea { width: 96%; min-height: 600px; font-family: "Nanum Barun Gothic"; padding: 2%; }
