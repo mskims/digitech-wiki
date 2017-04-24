@@ -14,7 +14,7 @@ $page = isset($get[1]) ? $get[1] : NULL;
 
 $ip = $_SERVER["REMOTE_ADDR"];
 // DB
-$db = new PDO("mysql: host=127.0.0.1;dbname=minseok_dwiki;charset=utf8", "minseok", "1234");
+$db = new PDO("mysql: host=127.0.0.1;dbname=minseok_dwiki;charset=utf8", "username", "password");
 function sql($sql){
 	global $db;
 	return $db->query($sql);
